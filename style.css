@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+h1 {
+    text-align: center;
+}
+
+.box {
+    margin: 10px;
+    border: 2px solid black;
+    width: 280px;
+}
+
+.box .image{
+    margin: 10px;
+    width: 256px;
+    height: 256px;
+}
+
+.box .text{
+    margin: 10px;
+}
+
+.text h2 {
+    margin: 5px 0;
+}
+
+.text input {
+    width: 50px;
+    text-align: center;
+}
+
+.btnCarrinho {
+    margin: 5px 0;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    background: rgb(102, 126, 205);
+}
+
+#pagamento button {
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    font-size: 2em;
+    color: white;
+    background: green;
+    margin: 30px 0;
+    padding: 5px;
+}
+
+.pagamento {
+    border-top: 3px solid grey;
+    margin: 30px 0;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.box button {
+    cursor: pointer;
+    text-align: end;
+    border: none;
+    border-radius: 20%;
+    padding: 3px;
+    font-size: 1em;
+    color: black;
+    background: red;
+}
+
+.clear {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border: double;
+    align-items: center;
+    text-align: center;
+    margin: 0 70px;
+    cursor: pointer;
+    text-align: end;
+    padding: 3px;
+    font-size: 1.3em;
+    color: aliceblue;
+    background: rgb(255, 62, 62);
+}
+
+.boxCatalogo button {
+    cursor: pointer;
+    color: aliceblue;
+    border-radius: 10px;
+    text-decoration: none;
+    background: mediumaquamarine;
+}
+
+.box {
+    box-shadow: 5px 10px #888888;}
