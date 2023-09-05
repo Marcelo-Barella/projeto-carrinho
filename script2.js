@@ -90,7 +90,7 @@ document.addEventListener('click', function (e) {
     }
     else if (e.target.classList.contains('clear')) {
         localStorage.removeItem('produtos');
-        document.location.reload()
+        window.location.href = "http://127.0.0.1:5500";
 
 
     }

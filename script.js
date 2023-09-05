@@ -68,7 +68,7 @@ containerLoja.addEventListener('click', function (e) {
     console.log(items[key])
 
     pegarItensSalvos(key);
-    window.location.href = "http://127.0.0.1:5500/carrinho.html";
+        window.location.href = "http://127.0.0.1:5500/carrinho.html";
 })
 
 loja();
