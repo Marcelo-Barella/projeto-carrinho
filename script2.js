@@ -136,6 +136,7 @@ pagamentoCarrinho1.addEventListener('click', function (e) {
     console.log(e.target.classList)
     if (e.target.classList.contains('concluir-pagamento') === false) return;
     alert('Pedido confirmado!');
+    localStorage.removeItem('produtos');
     window.location.href = 'http://127.0.0.1:5500';
 })
 
