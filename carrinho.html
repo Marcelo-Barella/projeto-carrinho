@@ -1,31 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">  
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Carrinho</title>
 </head>
+
 <body>
-    
-    <h1>Carrinho</h1>
+
+    <div class="header">
+        <div class="back">
+            <a href="http://127.0.0.1:5500" class="back-button"><strong>&#8249;</strong></a>
+        </div>
+        <div class="title">
+            <h1>Carrinho</h1>
+        </div>
+    </div>
     <div class="container">
 
     </div>
-    <button class="clear">Limpar Carrinho</button>
-        <div class="pagamento">
-            <h1>Conclua o Pagamento</h1>
-            <p>Cupom de Desconto</p>
-            <input type="text" class="cupom" placeholder="Insira um cupom válido"><p class="valido"></p>
-            <br>
+    <div id="clear-container">
+        <button class="clear">Limpar Carrinho</button>
+    </div>
+    <div class="pagamento">
+        <h1>Conclua o Pagamento</h1>
+        <p>Cupom de Desconto</p>
+        <input type="text" class="cupom" placeholder="Insira um cupom válido">
+        <p class="valido"></p>
+        <br>
         <div id="pagamento">
 
         </div>
-        
+
 
     </div>
 
     <script src="script2.js"></script>
 </body>
+
 </html>

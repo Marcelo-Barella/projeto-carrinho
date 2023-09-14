@@ -16,7 +16,8 @@ const produto7 = new Produto(6, 'Porção de Fritas P', 'Images/Fritas.jpg', 0, 
 const produto8 = new Produto(7, 'Coca-Cola 2L', 'Images/Refrigerante.jpg', 0, 10);
 
 const items = [produto1, produto2, produto3, produto4, produto5, produto6, produto7, produto8]
-const containerLoja = document.querySelector('.container');
+const containerLoja = document.querySelector('.menu-container');
+const containerLogin = document.querySelector('.login-container');
 loja = () => {
     items.map((value) => {
         containerLoja.innerHTML += `
@@ -67,6 +68,24 @@ containerLoja.addEventListener('click', function (e) {
     items[key].quantidade = Number(quantidadeP);
     console.log(items[key])
 
+    pegarItensSalvos(key);
+        window.location.href = "http://127.0.0.1:5500/carrinho.html";
+})
+
+containerLogin.addEventListener('click', function (e) {
+    if (e.target.classList.contains('login-button') === false) return;
+    let el = e.target;
+
+    console.log(containerLogin)
+    let user = containerLogin.querySelector('#uname').value;
+    let password = containerLogin.querySelector('#psw').value;
+    console.log('Credenciais:', user, password)
+
+    if (user == 'marcelo' && password == '123') {
+        alert('Login feito com sucesso!')
+    } else {
+        alert('Credenciais inválidas!')
+    }
     pegarItensSalvos(key);
         window.location.href = "http://127.0.0.1:5500/carrinho.html";
 })

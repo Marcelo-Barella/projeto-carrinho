@@ -51,7 +51,6 @@ calcularTotal = () => {
 const inputDesconto = pagamentoCarrinho1.querySelector('.cupom');
 const pagamentoCarrinho2 = pagamentoCarrinho1.querySelector('#pagamento');
 
-
 document.addEventListener('click', function (e) {
     let el = e.target;
 
@@ -128,9 +127,17 @@ inserirTextoPagamento = (descontoValor) => {
     <h3 class="desconto">${descontoText}</h3>
     <h1 class="valorTotal">Valor Total: R$ ${total - descontoValor},00</h1>
 
-    <button>Concluir Pagamento</button>
+    <button class="concluir-pagamento">Concluir Pagamento</button>
     `;
 
 }
+
+pagamentoCarrinho1.addEventListener('click', function (e) {
+    console.log(e.target.classList)
+    if (e.target.classList.contains('concluir-pagamento') === false) return;
+    alert('Pedido confirmado!');
+    window.location.href = 'http://127.0.0.1:5500';
+})
+
 
 carrinho();
