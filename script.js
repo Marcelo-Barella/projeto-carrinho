@@ -76,13 +76,14 @@ containerLogin.addEventListener('click', function (e) {
     if (e.target.classList.contains('login-button') === false) return;
     let el = e.target;
 
-    console.log(containerLogin)
+
     let user = containerLogin.querySelector('#uname').value;
     let password = containerLogin.querySelector('#psw').value;
     console.log('Credenciais:', user, password)
 
     if (user == 'marcelo' && password == '123') {
-        alert('Login feito com sucesso!')
+        alert('Login feito com sucesso!');
+        localStorage.removeItem('produtos');
     } else {
         alert('Credenciais inválidas!')
     }
