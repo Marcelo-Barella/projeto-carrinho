@@ -1,0 +1,15 @@
+{
+  "name": "projeto-5",
+  "version": "1.0.0",
+  "description": "Projeto de número 5 trabalhado com DOM, JS puro, sem , css mais trabalhado entre todos os projetos, mas nada avançado até o momento.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.2.0"
+  }
+}
