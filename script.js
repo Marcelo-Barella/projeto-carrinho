@@ -87,7 +87,7 @@ containerLogin.addEventListener('click', function (e) {
     } else {
         alert('Credenciais inválidas!')
     }
-    pegarItensSalvos(key);
+    // pegarItensSalvos(key);
         window.location.href = "http://127.0.0.1:5500/carrinho.html";
 })
 
